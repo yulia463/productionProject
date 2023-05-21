@@ -3,5 +3,12 @@
   "Перевод": "Translate",
   "Главная страница": "Main page",
   "Язык": "English",
-  "Страница не найдена": "Pages not found"
+  "Страница не найдена": "Pages not found",
+  "Главная": "Main",
+  "О сайте": "About as",
+  "toggle": "toggle",
+  "Произошла непредвиденная ошибка": "Expected Error",
+  "Обновить страницу": "Refresh the page",
+  "throw error": "throw error",
+  "Короткий язык": "En"
 }
