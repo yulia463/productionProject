@@ -2,12 +2,12 @@ import type { StoryObj } from '@storybook/react';
 import 'app/styles/index.scss';
 import { Theme } from 'app/providers/ThemeProviders';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { NavBar } from 'widgets/Navbar';
+import { Navbar } from 'widgets/Navbar';
 
 const meta = {
     title: 'widget/Navbar',
     // eslint-disable-next-line no-undef
-    component: NavBar,
+    component: Navbar,
     tags: ['autodocs'],
     argTypes: {
         backgroundColor: { control: 'color' },
