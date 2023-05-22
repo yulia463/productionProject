@@ -103,3 +103,9 @@ export const OutlinedDark: Story = {
     },
     decorators: [ThemeDecorator(Theme.DARK)],
 };
+export const ClearInverted: Story = {
+    args: {
+        children: 'Text',
+        theme: ButtonTheme.CLEAR_INVERTED,
+    },
+};

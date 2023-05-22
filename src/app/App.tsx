@@ -17,7 +17,7 @@ const App = () => {
 
             <Suspense fallback="">
                 <Navbar />
-                <button onClick={() => setIsOpen(true)}>toggle</button>
+                <button onClick={() => setIsOpen(true)}> toggle </button>
                 <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} />
                 <div className="content-page">
                     <Sidebar />
