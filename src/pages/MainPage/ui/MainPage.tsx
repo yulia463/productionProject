@@ -1,14 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { BugButton } from 'widgets/PageError/ui/BugButton';
+import { Counter } from 'entities/Counter';
 
 const MainPage = () => {
     const { t } = useTranslation();
 
     return (
         <div>
-            <BugButton />
             {t('Главная страница')}
+            <Counter />
         </div>
     );
 };
