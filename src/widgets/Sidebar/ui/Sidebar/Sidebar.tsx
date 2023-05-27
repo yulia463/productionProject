@@ -5,7 +5,7 @@ import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
 import { Button, ButtonSize, ButtonTheme } from 'shared/ui/Button/Button';
 import { useTranslation } from 'react-i18next';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
-import { RoutePath } from 'shared/config/routerConfig/routeConfig';
+import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import AboutIcon from 'shared/assets/icons/AboutUs.svg';
 import MainIcon from 'shared/assets/icons/Main.svg';
 import cls from './Sidebar.module.scss';

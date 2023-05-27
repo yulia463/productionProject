@@ -2,17 +2,14 @@ import type { StoryObj } from '@storybook/react';
 import 'app/styles/index.scss';
 import { Theme } from 'app/providers/ThemeProviders';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import MainPage from 'pages/MainPage/ui/MainPage';
+import MainPage from './MainPage';
 
 const meta = {
-    title: 'widget/MainPage',
+    title: 'pages/MainPage',
     component: MainPage,
     tags: ['autodocs'],
     argTypes: {
         backgroundColor: { control: 'color' },
-    },
-    args: {
-        to: '/',
     },
 };
 

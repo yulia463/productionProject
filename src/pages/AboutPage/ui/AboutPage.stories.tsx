@@ -2,17 +2,14 @@ import type { StoryObj } from '@storybook/react';
 import 'app/styles/index.scss';
 import { Theme } from 'app/providers/ThemeProviders';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import AboutPage from 'pages/AboutPage/ui/AboutPage';
+import AboutPage from './AboutPage';
 
 const meta = {
-    title: 'widget/AboutPage',
+    title: 'pages/AboutPage',
     component: AboutPage,
     tags: ['autodocs'],
     argTypes: {
         backgroundColor: { control: 'color' },
-    },
-    args: {
-        to: '/',
     },
 };
 

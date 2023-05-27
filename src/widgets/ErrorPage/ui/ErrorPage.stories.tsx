@@ -2,11 +2,12 @@ import type { StoryObj } from '@storybook/react';
 import 'app/styles/index.scss';
 import { Theme } from 'app/providers/ThemeProviders';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { Sidebar } from 'widgets/SideBar';
+import { ErrorPage } from 'widgets/ErrorPage/ui/ErrorPage';
 
 const meta = {
-    title: 'widget/Sidebar',
-    component: Sidebar,
+    title: 'widget/PageError',
+    // eslint-disable-next-line no-undef
+    component: ErrorPage,
     tags: ['autodocs'],
     argTypes: {
         backgroundColor: { control: 'color' },

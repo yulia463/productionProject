@@ -4,7 +4,6 @@ import { ThemeProvider } from 'app/providers/ThemeProviders';
 import App from './app/App';
 import 'app/styles/index.scss';
 import 'shared/config/i18n/i18n';
-import { ErrorBoundary } from 'app/providers/ErrorBondary';
 import { StoreProvider } from 'app/providers/StoreProvider';
 
 render(
@@ -18,5 +17,4 @@ render(
         </BrowserRouter>
     </StoreProvider>,
     document.getElementById('root'),
-
 );

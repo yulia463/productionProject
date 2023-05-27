@@ -1,5 +1,5 @@
 import React, { ErrorInfo, ReactNode, Suspense } from 'react';
-import { PageError } from 'widgets/PageError/ui/PageError';
+import ErrorPage from 'widgets/ErrorPage/ui/ErrorPage';
 
 interface ErrorBoundaryProps {
     children: ReactNode
@@ -36,7 +36,7 @@ class ErrorBoundary
         if (hasError) {
             // You can render any custom fallback UI
             // eslint-disable-next-line no-undef
-            return <Suspense fallback=" "><PageError /></Suspense>;
+            return <Suspense fallback=" "><ErrorPage /></Suspense>;
         }
 
         return children;

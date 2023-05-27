@@ -2,7 +2,7 @@ import type { StoryObj } from '@storybook/react';
 import 'app/styles/index.scss';
 import { Theme } from 'app/providers/ThemeProviders';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
+import { ThemeSwitcher } from './ThemeSwitcher';
 
 const meta = {
     title: 'widget/ThemeSwitcher',
@@ -10,9 +10,6 @@ const meta = {
     tags: ['autodocs'],
     argTypes: {
         backgroundColor: { control: 'color' },
-    },
-    args: {
-        to: '/',
     },
 };
 

@@ -1,13 +1,13 @@
 import type { StoryObj } from '@storybook/react';
 import 'app/styles/index.scss';
 import { Theme } from 'app/providers/ThemeProviders';
+
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { PageError } from 'widgets/PageError/ui/PageError';
+import { Sidebar } from './Sidebar';
 
 const meta = {
-    title: 'widget/PageError',
-    // eslint-disable-next-line no-undef
-    component: PageError,
+    title: 'widget/Sidebar',
+    component: Sidebar,
     tags: ['autodocs'],
     argTypes: {
         backgroundColor: { control: 'color' },
