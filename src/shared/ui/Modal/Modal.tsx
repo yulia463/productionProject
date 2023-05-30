@@ -25,6 +25,7 @@ export const Modal = (props: ModalProps) => {
     const [isClosing, setIsClosing] = useState(false);
     const timerRef = useRef<ReturnType <typeof setTimeout>>();
     const { theme } = useTheme();
+
     const closeHandler = useCallback(() => {
         if (onClose) {
             setIsClosing(true);
@@ -68,9 +69,7 @@ export const Modal = (props: ModalProps) => {
                         className={cls.content}
                         onClick={onContentClick}
                     >
-                        {/* eslint-disable-next-line i18next/no-literal-string */}
-                        {/* {children} */}
-                        asdfsdafsdajhvljvluv
+                        {children}
                     </div>
                 </div>
             </div>
