@@ -11,9 +11,6 @@ const meta = {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-    args: {
-        to: '/',
-    },
 };
 
 export default meta;

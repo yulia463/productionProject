@@ -1,9 +1,2 @@
-export {
-    userReducer,
-    userActions,
-} from './modal/slice/userSlice';
-
-export {
-    UserSchema,
-    User,
-} from './modal/types/user';
+export { userReducer, userActions } from './model/slice/userSlice';
+export { UserSchema, User } from './model/types/user';

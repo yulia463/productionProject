@@ -2,6 +2,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import React, {
     InputHTMLAttributes, memo, useEffect, useRef, useState,
 } from 'react';
+import { isOnline } from '@reduxjs/toolkit/dist/query/utils';
 import cls from './Input.module.scss';
 
 type HtmlInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange'>
