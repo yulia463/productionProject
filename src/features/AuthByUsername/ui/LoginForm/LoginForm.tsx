@@ -1,21 +1,22 @@
-import { classNames } from 'shared/lib/classNames/classNames';
-import { useTranslation } from 'react-i18next';
-import { Button, ButtonTheme } from 'shared/ui/Button/Button';
-import { Input } from 'shared/ui/Input/Input';
-import { useDispatch, useSelector } from 'react-redux';
-import { memo, useCallback } from 'react';
-import { getLoginState } from 'features/AuthByUsername/model/selectors/getLoginState/getLoginState';
-import { TextTheme, Text } from 'shared/ui/Text/Text';
-import { loginByUsername } from '../../model/services/loginByUsername/loginByUsername';
+import {classNames} from 'shared/lib/classNames/classNames';
+import {useTranslation} from 'react-i18next';
+import {Button, ButtonTheme} from 'shared/ui/Button/Button';
+import {Input} from 'shared/ui/Input/Input';
+import {useDispatch, useSelector} from 'react-redux';
+import {memo, useCallback} from 'react';
+import {getLoginState} from 'features/AuthByUsername/model/selectors/getLoginState/getLoginState';
+import {TextTheme, Text} from 'shared/ui/Text/Text';
+import {loginByUsername} from '../../model/services/loginByUsername/loginByUsername';
 import cls from './LoginForm.module.scss';
-import { loginActions } from '../../model/slice/loginSlice';
+import {loginActions} from '../../model/slice/loginSlice';
 
-interface LoginFormProps {
+export interface LoginFormProps {
     className?: string;
 }
-export const LoginForm = memo(
-    ({ className }: LoginFormProps) => {
-        const { t } = useTranslation();
+
+const LoginForm = memo(
+    ({className}: LoginFormProps) => {
+        const {t} = useTranslation();
         const dispatch = useDispatch();
         const {
             username, password, error, isLoading,
@@ -30,13 +31,13 @@ export const LoginForm = memo(
         }, [dispatch]);
 
         const onLoginClick = useCallback(() => {
-            dispatch(loginByUsername({ username, password }));
+            dispatch(loginByUsername({username, password}));
         }, [dispatch, password, username]);
 
         return (
             <div className={classNames(cls.InputWrapper, {}, [className])}>
-                <Text title={t('Форма авторизации')} />
-                {error && <Text text={t('Вы ввели неверный пароль или логин')} theme={TextTheme.ERROR} />}
+                <Text title={t('Форма авторизации')}/>
+                {error && <Text text={t('Вы ввели неверный пароль или логин')} theme={TextTheme.ERROR}/>}
                 <Input
                     autofocus
                     type="text"
@@ -64,3 +65,4 @@ export const LoginForm = memo(
         );
     },
 );
+export default LoginForm;

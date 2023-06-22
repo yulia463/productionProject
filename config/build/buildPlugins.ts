@@ -20,6 +20,7 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
     ];
     plugins.push(new BundleAnalyzerPlugin({
         openAnalyzer: false,
+        analyzerPort: 4433,
     }));
 
     if (isDev) {
