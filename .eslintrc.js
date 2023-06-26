@@ -54,6 +54,7 @@ module.exports = {
     },
     globals: {
         __IS_DEV__: true,
+        __API__: '',
     },
     overrides: [{
         files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
